@@ -9,7 +9,7 @@ module.exports = {
     },
     output: {
         filename: appName+'.bundle.js',
-        path: path.resolve(__dirname, 'public/build')
+        path: path.resolve(__dirname, 'build')
     },
     module: {
         rules: [{
@@ -32,6 +32,7 @@ module.exports = {
         static: {
             directory: path.join(__dirname, 'public'),
         },
+	port: 3000,
         allowedHosts: 'all',
     },
     plugins: [
